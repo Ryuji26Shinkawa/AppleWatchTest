@@ -25,10 +25,12 @@ final class WatchContentViewModel: NSObject, ObservableObject {
 
     func countup() {
         counter += 1
+        sendImmediately(count: counter)
     }
     
     func countdown() {
         counter -= 1
+        sendImmediately(count: counter)
     }
     
     /// 直ちにカウントを送信

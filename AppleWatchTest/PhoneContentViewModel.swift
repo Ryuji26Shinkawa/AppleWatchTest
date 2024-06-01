@@ -26,10 +26,12 @@ final class PhoneContentViewModel: NSObject, ObservableObject {
     
     func countup() {
         counter += 1
+        send(count: counter)
     }
     
     func countdown() {
         counter -= 1
+        send(count: counter)
     }
     
     /// カウントを送信
